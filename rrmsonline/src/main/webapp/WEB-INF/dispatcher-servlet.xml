@@ -15,6 +15,8 @@
 
 	<!-- Package to scan for components -->
 	<context:component-scan base-package="com.infyniteloop.rrmsonline.controllers"/>
+	<context:component-scan base-package="com.infyniteloop.rrmsbackend.daoimpl"/>
+										  
 
 
 

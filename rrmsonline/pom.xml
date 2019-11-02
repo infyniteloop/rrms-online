@@ -9,59 +9,65 @@
   <url>http://maven.apache.org</url>
   
   
-  <!-- Version information will be stored here -->
+ <!-- Version information will be stored here -->
 	<properties>
 		<javaee.version>7.0</javaee.version>
-		<spring.version>4.3.6.RELEASE</spring.version>
-		<spring.security.version>4.2.2.RELEASE</spring.security.version>		
+		<spring.version>5.2.0.RELEASE</spring.version>
+		
 	</properties>
 	
 	
   <dependencies>
   
-  	<!-- JAVA EE -->
+  
+  
+  		<!-- Loading Backend Project  -->
+		<dependency>
+		  <groupId>com.infyniteloop</groupId>
+		  <artifactId>rrmsbackend</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
+		</dependency>
+  
+		<!-- JAVA EE -->
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
 			<version>${javaee.version}</version>
 			<scope>provided</scope>
 		</dependency>
-  	
-  	<!-- SPRING -->
-		
+
+		<!-- JUNIT -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- SPRING -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+			
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
-		
-  	<!--  JUNIT  -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-    
-    
-    
-    
-    <!-- JSTL -->
 
-	<dependency>
-		<groupId>javax.servlet</groupId>
-	 	<artifactId>jstl</artifactId>
-		<version>1.2</version>
-	</dependency>
+		<!-- JSTL -->
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
 		
 		
-		
-		
-		
-		
-		
-		
+
   </dependencies>
   <build>
   
